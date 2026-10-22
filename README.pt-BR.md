@@ -1,38 +1,41 @@
 <div align="center">
   <img src="source/public/pulldot-mark.png" alt="Ícone do Pulldot" width="88">
   <h1>Pulldot</h1>
-  <p>Uma apresentação rápida do Pulldot para macOS.</p>
-  <p>macOS nativo · Gratuito e open source · Licença MIT</p>
+  <p>Baixe vídeos e áudios da internet direto no seu Mac.</p>
+  <p>macOS nativo · macOS 13+ · Gratuito e open source</p>
   <p><a href="#prévia">Assistir à demo</a> · <a href="README.md">English</a></p>
 </div>
 
-O Pulldot é um aplicativo gratuito e open source para macOS que baixa vídeos e áudios a partir de links. Este repositório contém uma demonstração simulada da interface e o projeto editável feito em Remotion.
+O Pulldot é um downloader simples para macOS, feito para vídeos e áudios publicamente acessíveis. Cole um link, escolha o formato e a qualidade, confira o tamanho estimado e acompanhe o download do início ao fim.
 
 ## Prévia
 
-[![Assista à demo de 12 segundos do Pulldot](pulldot-poster.png)](pulldot-demo-web.mp4)
+[![Assista à demo do Pulldot](pulldot-poster.png)](pulldot-demo-web.mp4)
 
-*A interface, o link, as informações de mídia, o tamanho e o progresso são simulados nesta demo.*
+*O vídeo usa uma mídia de exemplo para ilustrar o aplicativo.*
 
-## O que aparece na demo
+## Recursos
 
-- Colagem de um link e identificação automática da mídia.
-- Escolha entre vídeo e áudio, com opções de qualidade e tamanho estimado.
-- Acompanhamento do progresso, percentual, velocidade e tempo restante.
-- Confirmação do arquivo concluído e pronto para abrir no Finder.
+- **Identificação automática do link:** mostra título, miniatura, plataforma e duração quando disponíveis.
+- **Vídeo ou áudio:** salve o vídeo em MP4 ou extraia o áudio em MP3.
+- **Qualidade e tamanho antes de baixar:** escolha 720p, 1080p, 4K ou Original quando disponíveis. O Pulldot não aumenta a resolução; a estimativa de tamanho do MP4 aparece junto de cada qualidade. Para MP3, o app mostra uma faixa aproximada.
+- **Progresso do download:** acompanhe percentual, tamanho transferido, velocidade e tempo restante estimado quando a origem fornece esses dados.
+- **Fila prática:** cancele downloads, tente novamente pelo histórico, escolha a pasta de destino e revele arquivos concluídos no Finder.
+- **Aparência e idioma:** escolha entre Sistema, Claro ou Escuro e alterne entre português e inglês.
+- **Tudo local:** preferências e histórico ficam no Mac. Sem conta, telemetria ou serviços em nuvem.
 
-## Vídeo
+## Sites compatíveis
 
-O vídeo H.264 tem resolução 1920×1080, 30 fps, duração de 12 segundos e não possui áudio. Está pronto para ser incorporado a um site:
+O Pulldot usa o yt-dlp para compatibilidade com YouTube, Instagram, TikTok, Reddit, X, Vimeo e outros sites compatíveis. A disponibilidade depende do site, da região, do link e da mídia. O Pulldot não contorna DRM, exigências de login ou restrições de acesso.
 
-```html
-<video controls muted playsinline poster="pulldot-poster.png">
-  <source src="pulldot-demo-web.mp4" type="video/mp4">
-</video>
-```
+## Como funciona
+
+1. Cole um link. O Pulldot identifica a mídia e mostra os formatos e as qualidades disponíveis.
+2. Escolha MP4 ou MP3, selecione uma qualidade e confira o tamanho estimado.
+3. Adicione à fila, acompanhe o progresso e abra o arquivo concluído no Finder.
 
 ## Licença
 
-A demo e o código-fonte estão disponíveis sob a [licença MIT](LICENSE).
+O Pulldot é gratuito e open source sob a [licença MIT](LICENSE).
 
 Feito por **Evaldo**.
