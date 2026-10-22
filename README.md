@@ -3,7 +3,7 @@
   <h1>Pulldot</h1>
   <p>A quick look at Pulldot for macOS.</p>
   <p>Native macOS · Free and open source · MIT License</p>
-  <p><a href="#preview">Watch the demo</a> · <a href="#source">Remotion source</a> · <a href="README.pt-BR.md">Português</a></p>
+  <p><a href="#preview">Watch the demo</a> · <a href="README.pt-BR.md">Português</a></p>
 </div>
 
 Pulldot is a free, open-source macOS app for downloading video and audio from links. This repository contains a short simulated walkthrough of its interface, along with the editable Remotion project.
@@ -29,17 +29,6 @@ The H.264 video is 1920×1080 at 30 fps, lasts 12 seconds, and has no audio. It 
 <video controls muted playsinline poster="pulldot-poster.png">
   <source src="pulldot-demo-web.mp4" type="video/mp4">
 </video>
-```
-
-## Source
-
-The editable Remotion project is in [source/](source/). With Node.js and npm installed:
-
-```sh
-cd source
-npm ci
-npm run studio
-npm run render
 ```
 
 ## License
